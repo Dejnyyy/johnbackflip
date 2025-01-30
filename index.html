@@ -15,37 +15,40 @@
             background: linear-gradient(90deg, #ff00ff, #00ffff);
             color: white;
             text-align: center;
-            
+            display: flex;
+            justify-content: center;
         }
         .sidebar {
-            width: 210px;
+            width: 250px;
             background: rgba(0, 0, 0, 0.9);
             padding: 20px;
-            position: fixed;
             height: 100vh;
             overflow-y: auto;
             text-align: left;
+            position: fixed;
+            left: 0;
         }
         .sidebar a {
             display: block;
             color: white;
             text-decoration: none;
-            border-radius: 20px;
             padding: 10px;
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
         .sidebar a:hover {
             background: rgba(255, 255, 255, 0.2);
         }
         .container {
             max-width: 800px;
-            margin: auto;
             background-color: rgba(0, 0, 0, 0.8);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255,255,255,0.5);
             animation: pop-in 1s ease-out;
-            
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            left: 125px;
         }
         h1, h2 {
             text-shadow: 4px 4px #ff00ff;
